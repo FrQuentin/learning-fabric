@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "learning",
+	"version": "${version}",
+	"name": "Learning",
+	"description": "This mod is intended to help me learn and develop features that I will incorporate into my future mod projects.",
+	"authors": [
+		"Quentin Fouilleul"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/frquentin/learning-fabric"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/learning/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.quentin.learning.Learning"
+		],
+		"client": [
+			"fr.quentin.learning.LearningClient"
+		],
+		"fabric-datagen": [
+			"fr.quentin.learning.LearningDataGenerator"
+		]
+	},
+	"mixins": [
+		"learning.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
