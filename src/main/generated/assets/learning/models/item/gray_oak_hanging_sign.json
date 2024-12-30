@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "learning:item/gray_oak_hanging_sign"
+  }
+}

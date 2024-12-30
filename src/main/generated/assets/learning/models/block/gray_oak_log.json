@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "learning:block/gray_oak_log_top",
+    "side": "learning:block/gray_oak_log"
+  }
+}

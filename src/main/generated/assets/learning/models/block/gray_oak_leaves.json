@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "learning:block/gray_oak_leaves"
+  }
+}

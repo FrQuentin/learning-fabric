@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "learning:gray_oak_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "learning:gray_oak_planks"
+  }
+}

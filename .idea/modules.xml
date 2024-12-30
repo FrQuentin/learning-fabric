@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-fabric.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-fabric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-fabric.main.iml" />
     </modules>
   </component>
 </project>

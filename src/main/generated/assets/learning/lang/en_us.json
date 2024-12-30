@@ -1,0 +1,23 @@
+{
+  "block.learning.gray_oak_button": "Gray Oak Button",
+  "block.learning.gray_oak_door": "Gray Oak Door",
+  "block.learning.gray_oak_fence": "Gray Oak Fence",
+  "block.learning.gray_oak_fence_gate": "Gray Oak Fence Gate",
+  "block.learning.gray_oak_hanging_sign": "Gray Oak Hanging Sign",
+  "block.learning.gray_oak_leaves": "Gray Oak Leaves",
+  "block.learning.gray_oak_log": "Gray Oak Log",
+  "block.learning.gray_oak_planks": "Gray Oak Planks",
+  "block.learning.gray_oak_pressure_plate": "Gray Oak Pressure Plate",
+  "block.learning.gray_oak_sapling": "Gray Oak Sapling",
+  "block.learning.gray_oak_sign": "Gray Oak Sign",
+  "block.learning.gray_oak_slab": "Gray Oak Slab",
+  "block.learning.gray_oak_stairs": "Gray Oak Stairs",
+  "block.learning.gray_oak_trapdoor": "Gray Oak Trapdoor",
+  "block.learning.gray_oak_wood": "Gray Oak Wood",
+  "block.learning.stripped_gray_oak_log": "Stripped Gray Oak Log",
+  "block.learning.stripped_gray_oak_wood": "Stripped Gray Oak Wood",
+  "item.learning.gray_oak_boat": "Gray Oak Boat",
+  "item.learning.gray_oak_chest_boat": "Gray Oak Chest Boat",
+  "itemGroup.learning.learningBlocks": "Blocks",
+  "itemGroup.learning.learningItems": "Items"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "learning:block/gray_oak_sapling"
+  }
+}
