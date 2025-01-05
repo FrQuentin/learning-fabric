@@ -36,6 +36,7 @@ public class ModEnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.GRAY_OAK_BOAT, "Gray Oak Boat");
         translationBuilder.add(ModItems.GRAY_OAK_CHEST_BOAT, "Gray Oak Chest Boat");
         translationBuilder.add(ModBlocks.GRAY_TORCH, "Gray Torch");
+        translationBuilder.add(ModBlocks.GRAY_LADDER, "Gray Ladder");
 
         translationBuilder.add(ModItemGroups.A_LEARNING_BLOCKS.getDisplayName().getString(), "Blocks");
         translationBuilder.add(ModItemGroups.B_LEARNING_ITEMS.getDisplayName().getString(), "Items");

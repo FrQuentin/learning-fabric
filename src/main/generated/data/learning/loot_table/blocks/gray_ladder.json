@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "learning:gray_oak_sign"
+          "name": "learning:gray_ladder"
         }
       ],
       "rolls": 1.0

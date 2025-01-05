@@ -20,6 +20,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(
                         ModBlocks.GRAY_OAK_LEAVES
                 );
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(
+                        ModBlocks.GRAY_LADDER
+                );
         getOrCreateTagBuilder(ModBlockTags.GRAY_OAK_LOGS)
                 .add(
                         ModBlocks.GRAY_OAK_LOG,
@@ -48,5 +52,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS).add(ModBlocks.GRAY_OAK_HANGING_SIGN);
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS).add(ModBlocks.GRAY_OAK_WALL_HANGING_SIGN);
         getOrCreateTagBuilder(BlockTags.WALL_POST_OVERRIDE).add(ModBlocks.GRAY_TORCH);
+        getOrCreateTagBuilder(BlockTags.CLIMBABLE).add(ModBlocks.GRAY_LADDER);
+        getOrCreateTagBuilder(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.GRAY_LADDER);
     }
 }

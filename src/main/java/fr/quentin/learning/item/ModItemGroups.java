@@ -34,6 +34,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GRAY_OAK_BUTTON);
                         entries.add(ModBlocks.GRAY_OAK_LEAVES);
                         entries.add(ModBlocks.GRAY_OAK_SAPLING);
+                        entries.add(ModItems.GRAY_TORCH);
+                        entries.add(ModBlocks.GRAY_LADDER);
                     }).build());
 
     public static final ItemGroup B_LEARNING_ITEMS = Registry.register(Registries.ITEM_GROUP,
@@ -46,7 +48,6 @@ public class ModItemGroups {
                         entries.add(ModItems.GRAY_OAK_HANGING_SIGN);
                         entries.add(ModItems.GRAY_OAK_BOAT);
                         entries.add(ModItems.GRAY_OAK_CHEST_BOAT);
-                        entries.add(ModItems.GRAY_TORCH);
                     }).build());
 
     public static void initialize() {

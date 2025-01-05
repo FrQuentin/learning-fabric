@@ -25,14 +25,15 @@ public class ModModelProvider extends FabricModelProvider {
                 .button(ModBlocks.GRAY_OAK_BUTTON)
                 .sign(ModBlocks.GRAY_OAK_SIGN, ModBlocks.GRAY_OAK_WALL_SIGN)
                 .build();
-        blockStateModelGenerator.registerCubeAllModelTexturePool(grayOakPlanksFamily.getBaseBlock())
-                        .family(grayOakPlanksFamily);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(grayOakPlanksFamily.getBaseBlock()).family(grayOakPlanksFamily);
         blockStateModelGenerator.registerDoor(ModBlocks.GRAY_OAK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.GRAY_OAK_TRAPDOOR);
         blockStateModelGenerator.registerSingleton(ModBlocks.GRAY_OAK_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GRAY_OAK_SAPLING, ModBlocks.POTTED_GRAY_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_GRAY_OAK_LOG, ModBlocks.GRAY_OAK_HANGING_SIGN, ModBlocks.GRAY_OAK_WALL_HANGING_SIGN);
         blockStateModelGenerator.registerTorch(ModBlocks.GRAY_TORCH, ModBlocks.GRAY_WALL_TORCH);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GRAY_LADDER);
+        blockStateModelGenerator.registerItemModel(ModBlocks.GRAY_LADDER);
     }
 
     @Override

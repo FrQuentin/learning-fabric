@@ -189,6 +189,10 @@ public class ModBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
+    public static final Block GRAY_LADDER = register(
+            "gray_ladder",
+            new LadderBlock(AbstractBlock.Settings.create().solid().strength(0.4F).sounds(BlockSoundGroup.LADDER).nonOpaque().pistonBehavior(PistonBehavior.DESTROY))
+    );
 
     private static Block register(String name, Block block) {
         registerBlockAsItem(name, block);
