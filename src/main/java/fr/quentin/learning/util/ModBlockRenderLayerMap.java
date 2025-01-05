@@ -10,5 +10,7 @@ public class ModBlockRenderLayerMap {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAY_OAK_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAY_OAK_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_GRAY_OAK_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAY_TORCH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAY_WALL_TORCH, RenderLayer.getCutout());
     }
 }

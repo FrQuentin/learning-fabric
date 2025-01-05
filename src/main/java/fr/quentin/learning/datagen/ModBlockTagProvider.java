@@ -47,5 +47,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS).add(ModBlocks.GRAY_OAK_WALL_SIGN);
         getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS).add(ModBlocks.GRAY_OAK_HANGING_SIGN);
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS).add(ModBlocks.GRAY_OAK_WALL_HANGING_SIGN);
+        getOrCreateTagBuilder(BlockTags.WALL_POST_OVERRIDE).add(ModBlocks.GRAY_TORCH);
     }
 }

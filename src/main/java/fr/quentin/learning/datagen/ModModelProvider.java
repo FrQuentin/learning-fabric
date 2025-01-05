@@ -32,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.GRAY_OAK_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GRAY_OAK_SAPLING, ModBlocks.POTTED_GRAY_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_GRAY_OAK_LOG, ModBlocks.GRAY_OAK_HANGING_SIGN, ModBlocks.GRAY_OAK_WALL_HANGING_SIGN);
+        blockStateModelGenerator.registerTorch(ModBlocks.GRAY_TORCH, ModBlocks.GRAY_WALL_TORCH);
     }
 
     @Override

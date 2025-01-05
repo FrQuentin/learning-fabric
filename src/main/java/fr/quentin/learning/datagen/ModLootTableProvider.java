@@ -32,5 +32,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ModBlocks.POTTED_GRAY_OAK_SAPLING);
         addDrop(ModBlocks.GRAY_OAK_SIGN);
         addDrop(ModBlocks.GRAY_OAK_HANGING_SIGN);
+        addDrop(ModBlocks.GRAY_TORCH);
     }
 }

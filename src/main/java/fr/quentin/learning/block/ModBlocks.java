@@ -11,6 +11,7 @@ import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -166,6 +167,26 @@ public class ModBlocks {
                             .burnable()
                             .dropsLike(GRAY_OAK_HANGING_SIGN)
                             .sounds(BlockSoundGroup.HANGING_SIGN)
+            )
+    );
+    public static final Block GRAY_TORCH = register(
+            "gray_torch",
+            new TorchBlock(
+                    ParticleTypes.FLAME,
+                    AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 14).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+    public static final Block GRAY_WALL_TORCH = register(
+            "gray_wall_torch",
+            new WallTorchBlock(
+                    ParticleTypes.FLAME,
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .breakInstantly()
+                            .luminance(state -> 14)
+                            .sounds(BlockSoundGroup.WOOD)
+                            .dropsLike(GRAY_TORCH)
+                            .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
 

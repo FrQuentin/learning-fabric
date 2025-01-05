@@ -46,6 +46,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GRAY_OAK_HANGING_SIGN);
                         entries.add(ModItems.GRAY_OAK_BOAT);
                         entries.add(ModItems.GRAY_OAK_CHEST_BOAT);
+                        entries.add(ModItems.GRAY_TORCH);
                     }).build());
 
     public static void initialize() {
