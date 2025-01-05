@@ -22,7 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 );
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(
-                        ModBlocks.GRAY_LADDER
+                        ModBlocks.GRAY_LADDER,
+                        ModBlocks.GRAY_BOOKSHELF
                 );
         getOrCreateTagBuilder(ModBlockTags.GRAY_OAK_LOGS)
                 .add(
@@ -54,5 +55,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALL_POST_OVERRIDE).add(ModBlocks.GRAY_TORCH);
         getOrCreateTagBuilder(BlockTags.CLIMBABLE).add(ModBlocks.GRAY_LADDER);
         getOrCreateTagBuilder(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.GRAY_LADDER);
+        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER).add(ModBlocks.GRAY_BOOKSHELF);
     }
 }

@@ -191,7 +191,23 @@ public class ModBlocks {
     );
     public static final Block GRAY_LADDER = register(
             "gray_ladder",
-            new LadderBlock(AbstractBlock.Settings.create().solid().strength(0.4F).sounds(BlockSoundGroup.LADDER).nonOpaque().pistonBehavior(PistonBehavior.DESTROY))
+            new LadderBlock(AbstractBlock.Settings.create()
+                    .strength(0.4F)
+                    .sounds(BlockSoundGroup.LADDER)
+                    .nonOpaque()
+                    .solid()
+                    .pistonBehavior(PistonBehavior.DESTROY))
+    );
+    public static final Block GRAY_BOOKSHELF = register(
+            "gray_bookshelf",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.GRAY)
+                            .instrument(NoteBlockInstrument.BASS)
+                            .strength(1.5F)
+                            .sounds(BlockSoundGroup.WOOD)
+                            .burnable()
+            )
     );
 
     private static Block register(String name, Block block) {

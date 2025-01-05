@@ -3,6 +3,8 @@ package fr.quentin.learning.datagen;
 import fr.quentin.learning.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.item.Items;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -34,5 +36,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GRAY_OAK_HANGING_SIGN);
         addDrop(ModBlocks.GRAY_TORCH);
         addDrop(ModBlocks.GRAY_LADDER);
+        addDrop(ModBlocks.GRAY_BOOKSHELF, block -> drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
     }
 }

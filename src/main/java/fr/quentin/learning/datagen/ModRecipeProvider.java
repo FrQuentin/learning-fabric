@@ -9,9 +9,11 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -73,5 +75,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
         offerBoatRecipe(exporter, ModItems.GRAY_OAK_BOAT, ModBlocks.GRAY_OAK_PLANKS);
         offerChestBoatRecipe(exporter, ModItems.GRAY_OAK_CHEST_BOAT, ModItems.GRAY_OAK_BOAT);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_BOOKSHELF)
+                .input('#', ModBlocks.GRAY_OAK_PLANKS)
+                .input('X', Items.BOOK)
+                .pattern("###")
+                .pattern("XXX")
+                .pattern("###")
+                .criterion("has_book", conditionsFromItem(Items.BOOK))
+                .offerTo(exporter);
     }
 }

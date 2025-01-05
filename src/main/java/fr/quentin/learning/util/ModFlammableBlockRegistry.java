@@ -12,5 +12,6 @@ public class ModFlammableBlockRegistry {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GRAY_OAK_FENCE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GRAY_OAK_FENCE_GATE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GRAY_OAK_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GRAY_BOOKSHELF, 30, 20);
     }
 }

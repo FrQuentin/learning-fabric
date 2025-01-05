@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "learning:block/gray_oak_planks",
+    "side": "learning:block/gray_bookshelf"
+  }
+}

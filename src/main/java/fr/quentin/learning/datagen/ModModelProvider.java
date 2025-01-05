@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -34,11 +35,18 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTorch(ModBlocks.GRAY_TORCH, ModBlocks.GRAY_WALL_TORCH);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GRAY_LADDER);
         blockStateModelGenerator.registerItemModel(ModBlocks.GRAY_LADDER);
+        registerGrayBookshelf(blockStateModelGenerator);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.GRAY_OAK_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRAY_OAK_CHEST_BOAT, Models.GENERATED);
+    }
+
+    private void registerGrayBookshelf(BlockStateModelGenerator blockStateModelGenerator) {
+        TextureMap textureMap = TextureMap.sideEnd(TextureMap.getId(ModBlocks.GRAY_BOOKSHELF), TextureMap.getId(ModBlocks.GRAY_OAK_PLANKS));
+        Identifier identifier = Models.CUBE_COLUMN.upload(ModBlocks.GRAY_BOOKSHELF, textureMap, blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(ModBlocks.GRAY_BOOKSHELF, identifier));
     }
 }
