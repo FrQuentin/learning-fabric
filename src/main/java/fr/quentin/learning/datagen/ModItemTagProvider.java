@@ -41,5 +41,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HANGING_SIGNS).add(ModBlocks.GRAY_OAK_HANGING_SIGN.asItem());
         getOrCreateTagBuilder(ItemTags.BOATS).add(ModItems.GRAY_OAK_BOAT);
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(ModItems.GRAY_OAK_CHEST_BOAT);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.GRAY_WOODEN_SWORD);
+        getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.GRAY_WOODEN_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.CLUSTER_MAX_HARVESTABLES).add(ModItems.GRAY_WOODEN_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.GRAY_WOODEN_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.GRAY_WOODEN_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.GRAY_WOODEN_HOE);
     }
 }

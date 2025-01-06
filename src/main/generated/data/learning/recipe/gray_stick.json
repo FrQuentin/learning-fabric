@@ -1,21 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "wooden_fence",
+  "group": "sticks",
   "key": {
-    "P": {
+    "#": {
       "item": "learning:gray_oak_planks"
-    },
-    "S": {
-      "item": "learning:gray_stick"
     }
   },
   "pattern": [
-    "PSP",
-    "PSP"
+    "#",
+    "#"
   ],
   "result": {
-    "count": 3,
-    "id": "learning:gray_oak_fence"
+    "count": 4,
+    "id": "learning:gray_stick"
   }
 }

@@ -50,6 +50,12 @@ public class ModItemGroups {
                         entries.add(ModItems.GRAY_OAK_HANGING_SIGN);
                         entries.add(ModItems.GRAY_OAK_BOAT);
                         entries.add(ModItems.GRAY_OAK_CHEST_BOAT);
+                        entries.add(ModItems.GRAY_STICK);
+                        entries.add(ModItems.GRAY_WOODEN_SWORD);
+                        entries.add(ModItems.GRAY_WOODEN_SHOVEL);
+                        entries.add(ModItems.GRAY_WOODEN_PICKAXE);
+                        entries.add(ModItems.GRAY_WOODEN_AXE);
+                        entries.add(ModItems.GRAY_WOODEN_HOE);
                     }).build());
 
     public static void initialize() {

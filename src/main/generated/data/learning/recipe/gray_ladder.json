@@ -1,22 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "wooden_sign",
   "key": {
-    "P": {
-      "item": "learning:gray_oak_planks"
-    },
-    "S": {
+    "#": {
       "item": "learning:gray_stick"
     }
   },
   "pattern": [
-    "PPP",
-    "PPP",
-    " S "
+    "# #",
+    "###",
+    "# #"
   ],
   "result": {
     "count": 3,
-    "id": "learning:gray_oak_sign"
+    "id": "learning:gray_ladder"
   }
 }

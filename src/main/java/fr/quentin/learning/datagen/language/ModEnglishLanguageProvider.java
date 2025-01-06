@@ -39,6 +39,12 @@ public class ModEnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.GRAY_LADDER, "Gray Ladder");
         translationBuilder.add(ModBlocks.GRAY_BOOKSHELF, "Gray Bookshelf");
         translationBuilder.add(ModBlocks.GRAY_CHISELED_BOOKSHELF, "Gray Chiseled Bookshelf");
+        translationBuilder.add(ModItems.GRAY_STICK, "Gray Stick");
+        translationBuilder.add(ModItems.GRAY_WOODEN_SWORD, "Gray Wooden Sword");
+        translationBuilder.add(ModItems.GRAY_WOODEN_SHOVEL, "Gray Wooden Shovel");
+        translationBuilder.add(ModItems.GRAY_WOODEN_PICKAXE, "Gray Wooden Pickaxe");
+        translationBuilder.add(ModItems.GRAY_WOODEN_AXE, "Gray Wooden Axe");
+        translationBuilder.add(ModItems.GRAY_WOODEN_HOE, "Gray Wooden Hoe");
 
         translationBuilder.add(ModItemGroups.A_LEARNING_BLOCKS.getDisplayName().getString(), "Blocks");
         translationBuilder.add(ModItemGroups.B_LEARNING_ITEMS.getDisplayName().getString(), "Items");

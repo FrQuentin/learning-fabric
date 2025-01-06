@@ -22,6 +22,12 @@
   "block.learning.stripped_gray_oak_wood": "Stripped Gray Oak Wood",
   "item.learning.gray_oak_boat": "Gray Oak Boat",
   "item.learning.gray_oak_chest_boat": "Gray Oak Chest Boat",
+  "item.learning.gray_stick": "Gray Stick",
+  "item.learning.gray_wooden_axe": "Gray Wooden Axe",
+  "item.learning.gray_wooden_hoe": "Gray Wooden Hoe",
+  "item.learning.gray_wooden_pickaxe": "Gray Wooden Pickaxe",
+  "item.learning.gray_wooden_shovel": "Gray Wooden Shovel",
+  "item.learning.gray_wooden_sword": "Gray Wooden Sword",
   "itemGroup.learning.learningBlocks": "Blocks",
   "itemGroup.learning.learningItems": "Items"
 }

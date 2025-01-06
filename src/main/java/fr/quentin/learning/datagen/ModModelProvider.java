@@ -42,6 +42,12 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.GRAY_OAK_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRAY_OAK_CHEST_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRAY_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRAY_WOODEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GRAY_WOODEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GRAY_WOODEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GRAY_WOODEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GRAY_WOODEN_HOE, Models.HANDHELD);
     }
 
     private void registerGrayBookshelf(BlockStateModelGenerator blockStateModelGenerator) {

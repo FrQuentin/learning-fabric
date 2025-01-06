@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "learning:gray_stick"
+    },
+    "X": {
+      "item": "learning:gray_oak_planks"
+    }
+  },
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "learning:gray_wooden_hoe"
+  }
+}

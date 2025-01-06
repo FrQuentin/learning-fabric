@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "learning:item/gray_wooden_shovel"
+  }
+}
