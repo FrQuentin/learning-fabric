@@ -1,7 +1,6 @@
 package fr.quentin.learning.item;
 
 import fr.quentin.learning.Learning;
-import fr.quentin.learning.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
@@ -19,25 +18,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(Blocks.GRASS_BLOCK))
                     .displayName(Text.translatable("itemGroup." + Learning.MOD_ID + ".learningBlocks"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.GRAY_OAK_LOG);
-                        entries.add(ModBlocks.GRAY_OAK_WOOD);
-                        entries.add(ModBlocks.STRIPPED_GRAY_OAK_LOG);
-                        entries.add(ModBlocks.STRIPPED_GRAY_OAK_WOOD);
-                        entries.add(ModBlocks.GRAY_OAK_PLANKS);
-                        entries.add(ModBlocks.GRAY_OAK_STAIRS);
-                        entries.add(ModBlocks.GRAY_OAK_SLAB);
-                        entries.add(ModBlocks.GRAY_OAK_FENCE);
-                        entries.add(ModBlocks.GRAY_OAK_FENCE_GATE);
-                        entries.add(ModBlocks.GRAY_OAK_DOOR);
-                        entries.add(ModBlocks.GRAY_OAK_TRAPDOOR);
-                        entries.add(ModBlocks.GRAY_OAK_PRESSURE_PLATE);
-                        entries.add(ModBlocks.GRAY_OAK_BUTTON);
-                        entries.add(ModBlocks.GRAY_OAK_LEAVES);
-                        entries.add(ModBlocks.GRAY_OAK_SAPLING);
-                        entries.add(ModItems.GRAY_TORCH);
-                        entries.add(ModBlocks.GRAY_LADDER);
-                        entries.add(ModBlocks.GRAY_BOOKSHELF);
-                        entries.add(ModBlocks.GRAY_CHISELED_BOOKSHELF);
+                        entries.add(Blocks.GRASS_BLOCK);
                     }).build());
 
     public static final ItemGroup B_LEARNING_ITEMS = Registry.register(Registries.ITEM_GROUP,
@@ -46,16 +27,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(Items.IRON_INGOT))
                     .displayName(Text.translatable("itemGroup." + Learning.MOD_ID + ".learningItems"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.GRAY_OAK_SIGN);
-                        entries.add(ModItems.GRAY_OAK_HANGING_SIGN);
-                        entries.add(ModItems.GRAY_OAK_BOAT);
-                        entries.add(ModItems.GRAY_OAK_CHEST_BOAT);
-                        entries.add(ModItems.GRAY_STICK);
-                        entries.add(ModItems.GRAY_WOODEN_SWORD);
-                        entries.add(ModItems.GRAY_WOODEN_SHOVEL);
-                        entries.add(ModItems.GRAY_WOODEN_PICKAXE);
-                        entries.add(ModItems.GRAY_WOODEN_AXE);
-                        entries.add(ModItems.GRAY_WOODEN_HOE);
+                        entries.add(Items.IRON_INGOT);
                     }).build());
 
     public static void initialize() {
