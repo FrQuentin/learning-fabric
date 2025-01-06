@@ -209,6 +209,17 @@ public class ModBlocks {
                             .burnable()
             )
     );
+    public static final Block GRAY_CHISELED_BOOKSHELF = register(
+            "gray_chiseled_bookshelf",
+            new ChiseledBookshelfBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.GRAY)
+                            .instrument(NoteBlockInstrument.BASS)
+                            .strength(1.5F)
+                            .sounds(BlockSoundGroup.CHISELED_BOOKSHELF)
+                            .burnable()
+            )
+    );
 
     private static Block register(String name, Block block) {
         registerBlockAsItem(name, block);

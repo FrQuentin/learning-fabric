@@ -23,7 +23,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(
                         ModBlocks.GRAY_LADDER,
-                        ModBlocks.GRAY_BOOKSHELF
+                        ModBlocks.GRAY_BOOKSHELF,
+                        ModBlocks.GRAY_CHISELED_BOOKSHELF
                 );
         getOrCreateTagBuilder(ModBlockTags.GRAY_OAK_LOGS)
                 .add(

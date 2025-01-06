@@ -37,6 +37,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GRAY_TORCH);
                         entries.add(ModBlocks.GRAY_LADDER);
                         entries.add(ModBlocks.GRAY_BOOKSHELF);
+                        entries.add(ModBlocks.GRAY_CHISELED_BOOKSHELF);
                     }).build());
 
     public static final ItemGroup B_LEARNING_ITEMS = Registry.register(Registries.ITEM_GROUP,

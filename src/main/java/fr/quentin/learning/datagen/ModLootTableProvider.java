@@ -37,5 +37,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GRAY_TORCH);
         addDrop(ModBlocks.GRAY_LADDER);
         addDrop(ModBlocks.GRAY_BOOKSHELF, block -> drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0F)));
+        addDropWithSilkTouch(ModBlocks.GRAY_CHISELED_BOOKSHELF);
     }
 }
