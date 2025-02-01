@@ -1,5 +1,6 @@
 package fr.quentin.learning;
 
+import fr.quentin.learning.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,6 @@ public class Learning implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.initialize();
 	}
 }
