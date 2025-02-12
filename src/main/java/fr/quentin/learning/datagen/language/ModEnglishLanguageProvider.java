@@ -1,6 +1,7 @@
 package fr.quentin.learning.datagen.language;
 
 import fr.quentin.learning.item.ModItemGroups;
+import fr.quentin.learning.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -14,6 +15,11 @@ public class ModEnglishLanguageProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
+        translationBuilder.add(ModItems.PLATINUM_ORE, "Platinum Ore");
+        translationBuilder.add(ModItems.DEEPSLATE_PLATINUM_ORE, "Deepslate Platinum Ore");
+        translationBuilder.add(ModItems.PLATINUM_BLOCK, "Block of Platinum");
+        translationBuilder.add(ModItems.PLATINUM, "Platinum");
+
         translationBuilder.add(ModItemGroups.A_BLOCKS.getDisplayName().getString(), "Blocks");
         translationBuilder.add(ModItemGroups.B_ITEMS.getDisplayName().getString(), "Items");
     }

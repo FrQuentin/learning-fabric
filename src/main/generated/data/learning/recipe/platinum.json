@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "learning:platinum_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "learning:platinum"
+  }
+}
