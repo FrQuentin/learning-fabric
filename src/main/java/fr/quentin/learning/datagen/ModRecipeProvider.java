@@ -81,6 +81,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern(" #")
                         .criterion("has_platinum", conditionsFromTag(ModItemTags.PLATINUM_TOOL_MATERIALS))
                         .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.PLATINUM_HELMET)
+                        .input('X', ModItems.PLATINUM)
+                        .pattern("XXX")
+                        .pattern("X X")
+                        .criterion("has_platinum", conditionsFromItem(ModItems.PLATINUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.PLATINUM_CHESTPLATE)
+                        .input('X', ModItems.PLATINUM)
+                        .pattern("X X")
+                        .pattern("XXX")
+                        .pattern("XXX")
+                        .criterion("has_platinum", conditionsFromItem(ModItems.PLATINUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.PLATINUM_LEGGINGS)
+                        .input('X', ModItems.PLATINUM)
+                        .pattern("XXX")
+                        .pattern("X X")
+                        .pattern("X X")
+                        .criterion("has_platinum", conditionsFromItem(ModItems.PLATINUM))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.PLATINUM_BOOTS)
+                        .input('X', ModItems.PLATINUM)
+                        .pattern("X X")
+                        .pattern("X X")
+                        .criterion("has_platinum", conditionsFromItem(ModItems.PLATINUM))
+                        .offerTo(exporter);
                 createShaped(RecipeCategory.COMBAT, ModItems.PLATINUM_BOW)
                         .input('#', ModItems.PLATINUM)
                         .input('X', Items.STRING)

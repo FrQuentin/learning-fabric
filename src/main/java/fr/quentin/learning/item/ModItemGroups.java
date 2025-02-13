@@ -35,6 +35,10 @@ public class ModItemGroups {
                         entries.add(ModItems.PLATINUM_PICKAXE);
                         entries.add(ModItems.PLATINUM_AXE);
                         entries.add(ModItems.PLATINUM_HOE);
+                        entries.add(ModItems.PLATINUM_HELMET);
+                        entries.add(ModItems.PLATINUM_CHESTPLATE);
+                        entries.add(ModItems.PLATINUM_LEGGINGS);
+                        entries.add(ModItems.PLATINUM_BOOTS);
                         entries.add(ModItems.PLATINUM_BOW);
                     }).build());
 

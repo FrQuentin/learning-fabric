@@ -26,6 +26,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.PLATINUM_PICKAXE);
         getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.PLATINUM_AXE);
         getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.PLATINUM_HOE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR).add(ModItems.PLATINUM_HELMET);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR).add(ModItems.PLATINUM_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR).add(ModItems.PLATINUM_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR).add(ModItems.PLATINUM_BOOTS);
         getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.PLATINUM_BOW);
         getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE).add(ModItems.PLATINUM_BOW);
     }

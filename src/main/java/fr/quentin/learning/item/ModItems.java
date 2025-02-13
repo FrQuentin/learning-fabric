@@ -4,6 +4,7 @@ import fr.quentin.learning.Learning;
 import fr.quentin.learning.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -23,6 +24,22 @@ public class ModItems {
     public static final Item PLATINUM_PICKAXE = register("platinum_pickaxe", settings -> new PickaxeItem(ModToolMaterial.PLATINUM, 1.0F, -2.8F, settings));
     public static final Item PLATINUM_AXE = register("platinum_axe", settings -> new AxeItem(ModToolMaterial.PLATINUM, 5.0F, -3.0F, settings));
     public static final Item PLATINUM_HOE = register("platinum_hoe", settings -> new HoeItem(ModToolMaterial.PLATINUM, -3.0F, 0.0F, settings));
+    public static final Item PLATINUM_HELMET = register(
+            "platinum_helmet",
+            settings -> new ArmorItem(ModArmorMaterials.INSTANCE, EquipmentType.HELMET, settings.maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.PLATINUM_DURABILITY)))
+    );
+    public static final Item PLATINUM_CHESTPLATE = register(
+            "platinum_chestplate",
+            settings -> new ArmorItem(ModArmorMaterials.INSTANCE, EquipmentType.CHESTPLATE, settings.maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.PLATINUM_DURABILITY)))
+    );
+    public static final Item PLATINUM_LEGGINGS = register(
+            "platinum_leggings",
+            settings -> new ArmorItem(ModArmorMaterials.INSTANCE, EquipmentType.LEGGINGS, settings.maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.PLATINUM_DURABILITY)))
+    );
+    public static final Item PLATINUM_BOOTS = register(
+            "platinum_boots",
+            settings -> new ArmorItem(ModArmorMaterials.INSTANCE, EquipmentType.BOOTS, settings.maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.PLATINUM_DURABILITY)))
+    );
     public static final Item PLATINUM_BOW = register("platinum_bow", BowItem::new, new Item.Settings().maxDamage(576).enchantable(1));
 
     private static RegistryKey<Item> keyOf(String id) {

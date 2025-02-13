@@ -1,6 +1,7 @@
 package fr.quentin.learning.datagen;
 
 import fr.quentin.learning.block.ModBlocks;
+import fr.quentin.learning.item.ModArmorMaterials;
 import fr.quentin.learning.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -28,5 +29,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PLATINUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PLATINUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PLATINUM_HOE, Models.HANDHELD);
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_HELMET, ModArmorMaterials.PLATINUM, "helmet", false);
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_CHESTPLATE, ModArmorMaterials.PLATINUM, "chestplate", false);
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_LEGGINGS, ModArmorMaterials.PLATINUM, "leggings", false);
+        itemModelGenerator.registerArmor(ModItems.PLATINUM_BOOTS, ModArmorMaterials.PLATINUM, "boots", false);
     }
 }
