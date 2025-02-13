@@ -20,5 +20,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS).add(ModItems.PLATINUM);
         getOrCreateTagBuilder(ModItemTags.PLATINUM_TOOL_MATERIALS).add(ModItems.PLATINUM);
         getOrCreateTagBuilder(ModItemTags.REPAIRS_PLATINUM_ARMOR).add(ModItems.PLATINUM);
+        getOrCreateTagBuilder(ItemTags.CLUSTER_MAX_HARVESTABLES).add(ModItems.PLATINUM_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.PLATINUM_SWORD);
+        getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.PLATINUM_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.PLATINUM_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.PLATINUM_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.PLATINUM_HOE);
+        getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.PLATINUM_BOW);
+        getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE).add(ModItems.PLATINUM_BOW);
     }
 }

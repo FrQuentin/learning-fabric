@@ -4,11 +4,13 @@ import com.google.common.collect.ImmutableList;
 import fr.quentin.learning.Learning;
 import fr.quentin.learning.block.ModBlocks;
 import fr.quentin.learning.item.ModItems;
+import fr.quentin.learning.util.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -38,6 +40,54 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createShapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.PLATINUM, 9)
                         .input(ModBlocks.PLATINUM_BLOCK)
                         .criterion("has_platinum_block", conditionsFromItem(ModBlocks.PLATINUM_BLOCK))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.PLATINUM_SWORD)
+                        .input('#', Items.STICK)
+                        .input('X', ModItemTags.PLATINUM_TOOL_MATERIALS)
+                        .pattern("X")
+                        .pattern("X")
+                        .pattern("#")
+                        .criterion("has_platinum", conditionsFromTag(ModItemTags.PLATINUM_TOOL_MATERIALS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PLATINUM_SHOVEL)
+                        .input('#', Items.STICK)
+                        .input('X', ModItemTags.PLATINUM_TOOL_MATERIALS)
+                        .pattern("X")
+                        .pattern("#")
+                        .pattern("#")
+                        .criterion("has_platinum", conditionsFromTag(ModItemTags.PLATINUM_TOOL_MATERIALS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PLATINUM_PICKAXE)
+                        .input('#', Items.STICK)
+                        .input('X', ModItemTags.PLATINUM_TOOL_MATERIALS)
+                        .pattern("XXX")
+                        .pattern(" # ")
+                        .pattern(" # ")
+                        .criterion("has_platinum", conditionsFromTag(ModItemTags.PLATINUM_TOOL_MATERIALS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PLATINUM_AXE)
+                        .input('#', Items.STICK)
+                        .input('X', ModItemTags.PLATINUM_TOOL_MATERIALS)
+                        .pattern("XX")
+                        .pattern("X#")
+                        .pattern(" #")
+                        .criterion("has_platinum", conditionsFromTag(ModItemTags.PLATINUM_TOOL_MATERIALS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.TOOLS, ModItems.PLATINUM_HOE)
+                        .input('#', Items.STICK)
+                        .input('X', ModItemTags.PLATINUM_TOOL_MATERIALS)
+                        .pattern("XX")
+                        .pattern(" #")
+                        .pattern(" #")
+                        .criterion("has_platinum", conditionsFromTag(ModItemTags.PLATINUM_TOOL_MATERIALS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.PLATINUM_BOW)
+                        .input('#', ModItems.PLATINUM)
+                        .input('X', Items.STRING)
+                        .pattern(" #X")
+                        .pattern("# X")
+                        .pattern(" #X")
+                        .criterion("has_string", conditionsFromItem(Items.STRING))
                         .offerTo(exporter);
             }
         };

@@ -3,6 +3,12 @@
   "block.learning.platinum_block": "Block of Platinum",
   "block.learning.platinum_ore": "Platinum Ore",
   "item.learning.platinum": "Platinum",
+  "item.learning.platinum_axe": "Platinum Axe",
+  "item.learning.platinum_bow": "Platinum Bow",
+  "item.learning.platinum_hoe": "Platinum Hoe",
+  "item.learning.platinum_pickaxe": "Platinum Pickaxe",
+  "item.learning.platinum_shovel": "Platinum Shovel",
+  "item.learning.platinum_sword": "Platinum Sword",
   "itemGroup.learning.blocks": "Blocks",
   "itemGroup.learning.items": "Items"
 }

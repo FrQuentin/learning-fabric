@@ -23,5 +23,10 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.PLATINUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLATINUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_HOE, Models.HANDHELD);
     }
 }

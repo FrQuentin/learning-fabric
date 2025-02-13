@@ -19,6 +19,12 @@ public class ModEnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.DEEPSLATE_PLATINUM_ORE, "Deepslate Platinum Ore");
         translationBuilder.add(ModItems.PLATINUM_BLOCK, "Block of Platinum");
         translationBuilder.add(ModItems.PLATINUM, "Platinum");
+        translationBuilder.add(ModItems.PLATINUM_SWORD, "Platinum Sword");
+        translationBuilder.add(ModItems.PLATINUM_SHOVEL, "Platinum Shovel");
+        translationBuilder.add(ModItems.PLATINUM_PICKAXE, "Platinum Pickaxe");
+        translationBuilder.add(ModItems.PLATINUM_AXE, "Platinum Axe");
+        translationBuilder.add(ModItems.PLATINUM_HOE, "Platinum Hoe");
+        translationBuilder.add(ModItems.PLATINUM_BOW, "Platinum Bow");
 
         translationBuilder.add(ModItemGroups.A_BLOCKS.getDisplayName().getString(), "Blocks");
         translationBuilder.add(ModItemGroups.B_ITEMS.getDisplayName().getString(), "Items");

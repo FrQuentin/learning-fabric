@@ -1,0 +1,6 @@
+{
+  "parent": "learning:item/platinum_bow",
+  "textures": {
+    "layer0": "learning:item/platinum_bow_pulling_2"
+  }
+}

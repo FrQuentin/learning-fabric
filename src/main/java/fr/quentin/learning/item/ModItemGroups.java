@@ -30,6 +30,12 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemGroup." + Learning.MOD_ID + ".items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PLATINUM);
+                        entries.add(ModItems.PLATINUM_SWORD);
+                        entries.add(ModItems.PLATINUM_SHOVEL);
+                        entries.add(ModItems.PLATINUM_PICKAXE);
+                        entries.add(ModItems.PLATINUM_AXE);
+                        entries.add(ModItems.PLATINUM_HOE);
+                        entries.add(ModItems.PLATINUM_BOW);
                     }).build());
 
     public static void initialize() {
