@@ -1,4 +1,4 @@
-package fr.quentin.learning.util;
+package fr.quentin.learning.tag;
 
 import fr.quentin.learning.Learning;
 import net.minecraft.item.Item;

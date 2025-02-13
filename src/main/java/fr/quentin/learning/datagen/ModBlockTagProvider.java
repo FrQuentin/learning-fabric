@@ -1,7 +1,7 @@
 package fr.quentin.learning.datagen;
 
 import fr.quentin.learning.block.ModBlocks;
-import fr.quentin.learning.util.ModBlockTags;
+import fr.quentin.learning.tag.ModBlockTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;

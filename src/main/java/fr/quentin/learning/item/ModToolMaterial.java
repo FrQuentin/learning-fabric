@@ -1,7 +1,7 @@
 package fr.quentin.learning.item;
 
-import fr.quentin.learning.util.ModBlockTags;
-import fr.quentin.learning.util.ModItemTags;
+import fr.quentin.learning.tag.ModBlockTags;
+import fr.quentin.learning.tag.ModItemTags;
 import net.minecraft.item.ToolMaterial;
 
 public class ModToolMaterial {

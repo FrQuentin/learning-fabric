@@ -4,7 +4,7 @@ import com.google.common.collect.ImmutableList;
 import fr.quentin.learning.Learning;
 import fr.quentin.learning.block.ModBlocks;
 import fr.quentin.learning.item.ModItems;
-import fr.quentin.learning.util.ModItemTags;
+import fr.quentin.learning.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;

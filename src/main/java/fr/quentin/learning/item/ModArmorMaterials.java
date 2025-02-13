@@ -1,7 +1,7 @@
 package fr.quentin.learning.item;
 
 import fr.quentin.learning.Learning;
-import fr.quentin.learning.util.ModItemTags;
+import fr.quentin.learning.tag.ModItemTags;
 import net.minecraft.item.equipment.ArmorMaterial;
 import net.minecraft.item.equipment.EquipmentAsset;
 import net.minecraft.item.equipment.EquipmentAssetKeys;

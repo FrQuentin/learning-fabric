@@ -3,6 +3,7 @@ package fr.quentin.learning;
 import fr.quentin.learning.block.ModBlocks;
 import fr.quentin.learning.item.ModItemGroups;
 import fr.quentin.learning.item.ModItems;
+import fr.quentin.learning.world.gen.feature.ModDefaultBiomeFeatures;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class Learning implements ModInitializer {
 		ModItems.initialize();
 		ModBlocks.initialize();
 		ModItemGroups.initialize();
+		ModDefaultBiomeFeatures.generate();
 	}
 }
