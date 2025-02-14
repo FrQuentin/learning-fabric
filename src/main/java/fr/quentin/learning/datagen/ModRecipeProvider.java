@@ -115,6 +115,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern(" #X")
                         .criterion("has_string", conditionsFromItem(Items.STRING))
                         .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHILLI_CRATE, 1)
+                        .group("crops_crates")
+                        .input('#', ModItems.CHILLI)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern("###")
+                        .criterion("has_chilli", conditionsFromItem(ModItems.CHILLI))
+                        .offerTo(exporter);
+                createShapeless(RecipeCategory.FOOD, ModItems.CHILLI, 9)
+                        .input(ModBlocks.CHILLI_CRATE)
+                        .criterion("has_chilli_block", conditionsFromItem(ModBlocks.CHILLI_CRATE))
+                        .offerTo(exporter);
             }
         };
     }

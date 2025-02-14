@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chilli": {
+      "conditions": {
+        "items": [
+          {
+            "items": "learning:chilli"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "learning:chilli_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chilli"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "learning:chilli_crate"
+    ]
+  }
+}

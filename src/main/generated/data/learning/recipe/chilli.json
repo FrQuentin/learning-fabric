@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "learning:chilli_crate"
+  ],
+  "result": {
+    "count": 9,
+    "id": "learning:chilli"
+  }
+}

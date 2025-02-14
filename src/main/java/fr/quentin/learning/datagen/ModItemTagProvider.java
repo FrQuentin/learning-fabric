@@ -32,5 +32,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR).add(ModItems.PLATINUM_BOOTS);
         getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.PLATINUM_BOW);
         getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE).add(ModItems.PLATINUM_BOW);
+        getOrCreateTagBuilder(ItemTags.VILLAGER_PLANTABLE_SEEDS).add(ModItems.CHILLI_SEEDS);
+        getOrCreateTagBuilder(ItemTags.VILLAGER_PICKS_UP).add(ModItems.CHILLI);
     }
 }

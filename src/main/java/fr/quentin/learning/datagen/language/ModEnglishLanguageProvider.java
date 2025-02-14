@@ -29,6 +29,9 @@ public class ModEnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.PLATINUM_LEGGINGS, "Platinum Leggings");
         translationBuilder.add(ModItems.PLATINUM_BOOTS, "Platinum Boots");
         translationBuilder.add(ModItems.PLATINUM_BOW, "Platinum Bow");
+        translationBuilder.add(ModItems.CHILLI_SEEDS, "Chilli Seeds");
+        translationBuilder.add(ModItems.CHILLI, "Chilli");
+        translationBuilder.add(ModItems.CHILLI_CRATE, "Chilli Crate");
 
         translationBuilder.add(ModItemGroups.A_BLOCKS.getDisplayName().getString(), "Blocks");
         translationBuilder.add(ModItemGroups.B_ITEMS.getDisplayName().getString(), "Items");

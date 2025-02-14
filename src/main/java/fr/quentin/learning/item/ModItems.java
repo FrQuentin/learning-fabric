@@ -41,6 +41,13 @@ public class ModItems {
             settings -> new ArmorItem(ModArmorMaterials.INSTANCE, EquipmentType.BOOTS, settings.maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.PLATINUM_DURABILITY)))
     );
     public static final Item PLATINUM_BOW = register("platinum_bow", BowItem::new, new Item.Settings().maxDamage(576).enchantable(1));
+    public static final Item CHILLI_SEEDS = register("chilli_seeds", createBlockItemWithUniqueName(ModBlocks.CHILLI));
+    public static final Item CHILLI = register("chilli", new Item.Settings().food(ModFoodComponents.CHILLI));
+    public static final Item CHILLI_CRATE = register(ModBlocks.CHILLI_CRATE);
+
+    private static Function<Item.Settings, Item> createBlockItemWithUniqueName(Block block) {
+        return settings -> new BlockItem(block, settings.useItemPrefixedTranslationKey());
+    }
 
     private static RegistryKey<Item> keyOf(String id) {
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Learning.MOD_ID, id));
@@ -64,6 +71,10 @@ public class ModItems {
                 itemSettings -> factory.apply(block, itemSettings),
                 settings.useBlockPrefixedTranslationKey()
         );
+    }
+
+    public static Item register(String id, Item.Settings settings) {
+        return register(keyOf(id), Item::new, settings);
     }
 
     public static Item register(String id, Function<Item.Settings, Item> factory) {

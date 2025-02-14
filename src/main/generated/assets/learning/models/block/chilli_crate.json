@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "learning:block/chilli_crate_top",
+    "side": "learning:block/chilli_crate"
+  }
+}

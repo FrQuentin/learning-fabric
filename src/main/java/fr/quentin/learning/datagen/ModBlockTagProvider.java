@@ -22,6 +22,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.DEEPSLATE_PLATINUM_ORE,
                         ModBlocks.PLATINUM_BLOCK
                 );
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(
+                        ModBlocks.CHILLI,
+                        ModBlocks.CHILLI_CRATE
+                );
         getOrCreateTagBuilder(ModBlockTags.PLATINUM_ORES).add(ModBlocks.PLATINUM_ORE, ModBlocks.DEEPSLATE_PLATINUM_ORE);
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS).add(ModBlocks.PLATINUM_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.PLATINUM_ORE, ModBlocks.DEEPSLATE_PLATINUM_ORE, ModBlocks.PLATINUM_BLOCK);
@@ -33,5 +38,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_STONE_TOOL).addTag(ModBlockTags.NEEDS_PLATINUM_TOOL);
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_IRON_TOOL).addTag(ModBlockTags.NEEDS_PLATINUM_TOOL);
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_GOLD_TOOL).addTag(ModBlockTags.NEEDS_PLATINUM_TOOL);
+        getOrCreateTagBuilder(BlockTags.CROPS).add(ModBlocks.CHILLI);
+        getOrCreateTagBuilder(BlockTags.MAINTAINS_FARMLAND).add(ModBlocks.CHILLI);
     }
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "learning:block/chilli_stage0"
+    },
+    "age=1": {
+      "model": "learning:block/chilli_stage1"
+    },
+    "age=2": {
+      "model": "learning:block/chilli_stage2"
+    }
+  }
+}

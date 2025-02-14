@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PLATINUM_BLOCK);
                         entries.add(ModBlocks.PLATINUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+                        entries.add(ModBlocks.CHILLI_CRATE);
                     }).build());
     public static final ItemGroup B_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Learning.MOD_ID, "b_items"),
@@ -40,6 +41,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PLATINUM_LEGGINGS);
                         entries.add(ModItems.PLATINUM_BOOTS);
                         entries.add(ModItems.PLATINUM_BOW);
+                        entries.add(ModItems.CHILLI_SEEDS);
+                        entries.add(ModItems.CHILLI);
                     }).build());
 
     public static void initialize() {

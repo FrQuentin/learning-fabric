@@ -1,7 +1,10 @@
 {
+  "block.learning.chilli_crate": "Chilli Crate",
   "block.learning.deepslate_platinum_ore": "Deepslate Platinum Ore",
   "block.learning.platinum_block": "Block of Platinum",
   "block.learning.platinum_ore": "Platinum Ore",
+  "item.learning.chilli": "Chilli",
+  "item.learning.chilli_seeds": "Chilli Seeds",
   "item.learning.platinum": "Platinum",
   "item.learning.platinum_axe": "Platinum Axe",
   "item.learning.platinum_boots": "Platinum Boots",

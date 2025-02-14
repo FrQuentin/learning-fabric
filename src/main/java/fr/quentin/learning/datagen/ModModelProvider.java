@@ -5,9 +5,8 @@ import fr.quentin.learning.item.ModArmorMaterials;
 import fr.quentin.learning.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.Models;
+import net.minecraft.client.data.*;
+import net.minecraft.state.property.Properties;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -19,6 +18,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PLATINUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_BLOCK);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.CHILLI,
+                BlockStateModelGenerator.CrossType.NOT_TINTED, Properties.AGE_2, 0, 1, 2);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CHILLI_CRATE, TexturedModel.SIDE_END_WALL);
     }
 
     @Override
@@ -33,5 +35,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ModItems.PLATINUM_CHESTPLATE, ModArmorMaterials.PLATINUM, "chestplate", false);
         itemModelGenerator.registerArmor(ModItems.PLATINUM_LEGGINGS, ModArmorMaterials.PLATINUM, "leggings", false);
         itemModelGenerator.registerArmor(ModItems.PLATINUM_BOOTS, ModArmorMaterials.PLATINUM, "boots", false);
+        itemModelGenerator.register(ModItems.CHILLI, Models.GENERATED);
     }
 }
